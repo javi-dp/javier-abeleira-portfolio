@@ -3,6 +3,50 @@
    Tokens, Variables y Estilos de Alta Fidelidad
    ========================================================================== */
 
+/* Declaración de la tipografía oficial Archia */
+@font-face {
+  font-family: 'Archia';
+  src: url('/fonts/Archia-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Archia';
+  src: url('/fonts/Archia-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Archia';
+  src: url('/fonts/Archia-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Archia';
+  src: url('/fonts/Archia-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Archia';
+  src: url('/fonts/Archia-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Archia';
+  src: url('/fonts/Archia-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* Paleta de Colores BlackBox90 */
   --bg-dark-950: #0a090d;
@@ -27,10 +71,10 @@
   --border-medium: rgba(201, 168, 118, 0.35);
   --border-strong: rgba(201, 168, 118, 0.6);
 
-  /* Tipografías */
-  --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-jakarta: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-  --font-cinzel: 'Cinzel', serif;
+  /* Tipografía oficial Archia */
+  --font-inter: 'Archia', sans-serif;
+  --font-jakarta: 'Archia', sans-serif;
+  --font-cinzel: 'Archia', sans-serif;
 
   /* Sombras y Efectos */
   --shadow-luxury: 0 20px 50px -10px rgba(0, 0, 0, 0.7), 0 0 30px rgba(201, 168, 118, 0.08);
