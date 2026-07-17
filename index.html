@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javier Abeleira | Headhunter, Coach Ejecutivo EMCC & Orientador</title>
+    <meta name="description" content="Portfolio ejecutivo y portal de networking de Javier Abeleira Carrasco. Headhunter & Recruiter IT, Coach Ejecutivo Acreditado por EMCC y Docente/Orientador Profesional con +20 años de trayectoria." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Resplandores Ambientales de Fondo -->
+    <div class="ambient-background">
+      <div class="ambient-glow glow-top"></div>
+      <div class="ambient-glow glow-bottom"></div>
+      <div class="ambient-grid"></div>
+    </div>
+
+    <div id="app">
+      <!-- HEADER / NAVEGACIÓN GLASSMORPHISM -->
+      <header id="navbar" class="navbar">
+        <div class="navbar-container glass-nav">
+          <!-- Logo Monograma & Nombre -->
+          <a href="#" class="nav-brand">
+            <div class="nav-monogram">
+              <span>JA</span>
+            </div>
+            <div class="nav-brand-text">
+              <span class="nav-name">JAVIER ABELEIRA</span>
+              <span class="nav-tagline">BlackBox90 · Executive Portfolio</span>
+            </div>
+          </a>
+
+          <!-- Enlaces de Navegación -->
+          <nav class="nav-links">
+            <a href="#hero" class="nav-link">Inicio</a>
+            <a href="#especialidades" class="nav-link">Especialidades</a>
+            <a href="#trayectoria" class="nav-link">Trayectoria & CVs</a>
+            <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
+          </nav>
+
+          <!-- Acciones de Cabecera -->
+          <div class="nav-actions">
+            <button id="btn-open-cv-modal" class="btn-cv-header">
+              <i data-lucide="file-text" class="icon-sm"></i>
+              <span>Descargar CVs</span>
+            </button>
+            <a href="#contacto" class="btn-primary">
+              <span>Agendar Sesión</span>
+              <i data-lucide="arrow-right" class="icon-sm"></i>
+            </a>
+            <button id="mobile-menu-btn" class="btn-mobile-toggle" aria-label="Abrir menú">
+              <i data-lucide="menu"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- HERO SECTION -->
+      <section id="hero" class="hero-section">
+        <div class="container hero-grid">
+          
+          <!-- Columna Izquierda: Copy & Posicionamiento -->
+          <div class="hero-content">
+            <!-- Badges Veraces / Credenciales -->
+            <div class="hero-badge-group glass-panel">
+              <span class="status-indicator">
+                <span class="status-pulse"></span>
+                <span class="status-dot"></span>
+              </span>
+              <span class="badge-title">EMCC Accredited Practitioner</span>
+              <span class="badge-separator">|</span>
+              <span class="badge-subtitle">+20 Años Experiencia Ejecutiva</span>
+            </div>
+
+            <!-- Título Principal Luxury -->
+            <h1 class="hero-title">
+              Conectando <span class="gradient-text">Talento</span>, <br />
+              Liderazgo & <span class="font-cinzel text-gold italic">Estrategia.</span>
+            </h1>
+
+            <!-- Subtítulo / Posicionamiento Estratégico -->
+            <h2 class="hero-subtitle">
+              <span class="text-gold font-bold">Headhunter & Recruiter IT</span>
+              <span class="separator">•</span>
+              <span>Coach Ejecutivo EMCC</span>
+              <span class="separator">•</span>
+              <span>Orientador & Formador</span>
+            </h2>
+
+            <!-- Extracto Profesional Veraz -->
+            <p class="hero-description">
+              Unifico más de dos décadas de trayectoria directiva combinando la selección estratégica de talento en tecnología y marketing digital, el acompañamiento ejecutivo de alto impacto y la formación universitaria para transformar organizaciones e impulsar carreras en entornos exigentes.
+            </p>
+
+            <!-- Botones CTA -->
+            <div class="hero-cta-group">
+              <a href="#especialidades" class="btn-primary btn-large">
+                <span>Explorar Mis 3 Pilares</span>
+                <i data-lucide="layers" class="icon-sm"></i>
+              </a>
+              <button id="btn-hero-cv" class="btn-secondary btn-large">
+                <i data-lucide="download" class="icon-sm text-gold"></i>
+                <span>Centro de Descarga de CVs</span>
+              </button>
+            </div>
+
+            <!-- Métricas Veraces -->
+            <div class="hero-metrics">
+              <div class="metric-card glass-card">
+                <div class="metric-number">+20</div>
+                <div class="metric-label">Años en Selección, Headhunting & Empresa</div>
+              </div>
+              <div class="metric-card glass-card">
+                <div class="metric-number">EMCC</div>
+                <div class="metric-label">Practitioner Acreditado en Coaching & Mentoring</div>
+              </div>
+              <div class="metric-card glass-card">
+                <div class="metric-number">+18</div>
+                <div class="metric-label">Años Docencia Universitaria & Orientación</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna Derecha: Fotografía Real + Floating Badges -->
+          <div class="hero-visual">
+            <div class="hero-glow"></div>
+
+            <div class="portrait-container glass-panel">
+              <div class="portrait-inner">
+                <img 
+                  src="/img/01.jpg" 
+                  alt="Javier Abeleira Carrasco - Headhunter & Coach Ejecutivo" 
+                  class="portrait-img"
+                />
+                <div class="portrait-overlay"></div>
+                
+                <div class="portrait-tag">
+                  <div>
+                    <span class="portrait-name">Javier Abeleira Carrasco</span>
+                    <span class="portrait-location">Valencia & Ámbito Nacional / Internacional</span>
+                  </div>
+                  <div class="portrait-check font-cinzel">
+                    <i data-lucide="check-circle" class="icon-sm text-gold"></i>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tarjetas Flotantes -->
+              <div class="floating-card card-top-left glass-card animate-float">
+                <div class="floating-icon icon-it">
+                  <i data-lucide="cpu"></i>
+                </div>
+                <div>
+                  <div class="floating-label">Headhunting & IT</div>
+                  <div class="floating-value">Talento Digital Top 1%</div>
+                </div>
+              </div>
+
+              <div class="floating-card card-bottom-right glass-card animate-float-delayed">
+                <div class="floating-icon icon-coach">
+                  <i data-lucide="award"></i>
+                </div>
+                <div>
+                  <div class="floating-label">EMCC Practitioner</div>
+                  <div class="floating-value">Coaching & Mentoring</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECCIÓN ESPECIALIDADES (Preview Tarea 2) -->
+      <section id="especialidades" class="section preview-section">
+        <div class="container text-center">
+          <div class="section-pill">
+            <i data-lucide="compass" class="icon-xs"></i>
+            <span>Propuesta de Valor Unificada</span>
+          </div>
+          <h2 class="section-title">Tres Pilares Ejecutivos en Sinergia</h2>
+          <p class="section-subtitle">
+            Una visión integral que aborda la captación del talento, el desarrollo directivo y la orientación estratégica con rigor metodológico y cercanía humana.
+          </p>
+
+          <div class="bento-grid">
+            <div class="bento-card glass-card">
+              <div class="bento-icon">
+                <i data-lucide="users"></i>
+              </div>
+              <span class="bento-tag">Pilar 01</span>
+              <h3 class="bento-title">Headhunter & Recruiter</h3>
+              <p class="bento-desc">
+                Especialista en identificación directa (Direct Search), atracción y fidelización de talento clave en entornos digitales, tecnológicos (IT) y corporativos complejos.
+              </p>
+              <div class="bento-link">
+                <span>Ver competencias y casos</span>
+                <i data-lucide="arrow-right" class="icon-xs"></i>
+              </div>
+            </div>
+
+            <div class="bento-card glass-card">
+              <div class="bento-icon">
+                <i data-lucide="sparkles"></i>
+              </div>
+              <span class="bento-tag">Pilar 02</span>
+              <h3 class="bento-title">Coach & Mentor EMCC</h3>
+              <p class="bento-desc">
+                Acompañamiento directivo y de equipos acreditado por EMCC (Global Practitioner). Desarrollo de liderazgo, gestión del cambio y resiliencia corporativa.
+              </p>
+              <div class="bento-link">
+                <span>Ver metodología EMCC</span>
+                <i data-lucide="arrow-right" class="icon-xs"></i>
+              </div>
+            </div>
+
+            <div class="bento-card glass-card">
+              <div class="bento-icon">
+                <i data-lucide="graduation-cap"></i>
+              </div>
+              <span class="bento-tag">Pilar 03</span>
+              <h3 class="bento-title">Orientador & Formador</h3>
+              <p class="bento-desc">
+                +18 años impartiendo docencia y talleres sobre empleabilidad, orientación vocacional, desarrollo de habilidades y transición de carrera en universidades e instituciones.
+              </p>
+              <div class="bento-link">
+                <span>Ver programas formativos</span>
+                <i data-lucide="arrow-right" class="icon-xs"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN TRAYECTORIA (Preview Tarea 3) -->
+      <section id="trayectoria" class="section preview-section bg-darker">
+        <div class="container text-center">
+          <div class="section-pill">
+            <i data-lucide="briefcase" class="icon-xs"></i>
+            <span>Rigurosa Veracidad & Experiencia</span>
+          </div>
+          <h2 class="section-title">Trayectoria Profesional y Certificaciones</h2>
+          <p class="section-subtitle">
+            El timeline filtrable con las etapas de DP Soluciones, EMCC Global, NExO, CCOO, Universidad Europea de Valencia, UNIR y UPV se implementará y verificará en la Tarea 3.
+          </p>
+          
+          <div class="checkpoint-card glass-panel">
+            <i data-lucide="clock" class="checkpoint-icon animate-spin-slow"></i>
+            <h4 class="checkpoint-title">Punto de Control Tarea 1 Activo</h4>
+            <p class="checkpoint-desc">
+              Actualmente estamos validando el diseño luxury, la navegación y el impacto visual de la Hero Section con tu fotografía profesional real.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- MODAL CENTRO DE DESCARGA DE CVS -->
+      <div id="cv-modal" class="modal-backdrop">
+        <div class="modal-content glass-panel">
+          <button id="btn-close-cv-modal" class="modal-close" aria-label="Cerrar modal">
+            <i data-lucide="x"></i>
+          </button>
+
+          <div class="modal-header">
+            <div class="modal-icon">
+              <i data-lucide="download"></i>
+            </div>
+            <div>
+              <h3 class="modal-title">Centro de Descarga de CVs</h3>
+              <p class="modal-subtitle">Selecciona la versión o especialización adaptada a tu necesidad</p>
+            </div>
+          </div>
+
+          <div class="modal-grid">
+            <div class="cv-option glass-card featured-option">
+              <div>
+                <span class="badge-tag bg-gold text-black">Recomendado / Nuevo</span>
+                <h4 class="cv-option-title">CV Ejecutivo Consolidado</h4>
+                <p class="cv-option-desc">Versión sintetizada 2026 que unifica Headhunting, Coaching EMCC y Docencia en una lectura ágil.</p>
+              </div>
+              <button class="btn-download-featured">
+                <i data-lucide="file-check" class="icon-sm"></i>
+                <span>Descargar Versión Unificada</span>
+              </button>
+            </div>
+
+            <div class="cv-option glass-card">
+              <div>
+                <span class="badge-tag bg-slate">Especializado</span>
+                <h4 class="cv-option-title">CV Headhunter & Recruiter</h4>
+                <p class="cv-option-desc">Enfoque 100% en captación de talento Digital/IT, consultoría de selección y estrategia corporativa.</p>
+              </div>
+              <button class="btn-download-secondary">
+                <i data-lucide="file-text" class="icon-sm"></i>
+                <span>Descargar CV Recruiter</span>
+              </button>
+            </div>
+
+            <div class="cv-option glass-card">
+              <div>
+                <span class="badge-tag bg-slate">Especializado</span>
+                <h4 class="cv-option-title">CV Coach Ejecutivo EMCC</h4>
+                <p class="cv-option-desc">Detalle de acreditación EMCC Practitioner, metodologías de acompañamiento directivo y mentoring.</p>
+              </div>
+              <button class="btn-download-secondary">
+                <i data-lucide="file-text" class="icon-sm"></i>
+                <span>Descargar CV Coaching</span>
+              </button>
+            </div>
+
+            <div class="cv-option glass-card">
+              <div>
+                <span class="badge-tag bg-slate">Especializado</span>
+                <h4 class="cv-option-title">CV Docente & Orientador</h4>
+                <p class="cv-option-desc">Historial docente universitario, programas de empleabilidad, talleres de competencias y orientación vocacional.</p>
+              </div>
+              <button class="btn-download-secondary">
+                <i data-lucide="file-text" class="icon-sm"></i>
+                <span>Descargar CV Formador</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer id="contacto" class="footer">
+        <div class="container footer-content">
+          <div class="footer-brand">
+            <div class="footer-monogram">JA</div>
+            <span>© 2026 Javier Abeleira Carrasco · Todos los derechos reservados.</span>
+          </div>
+          <div class="footer-links">
+            <a href="mailto:javierabeleira@gmail.com" class="footer-link">
+              <i data-lucide="mail" class="icon-sm"></i>
+              <span>javierabeleira@gmail.com</span>
+            </a>
+            <a href="tel:+34651131876" class="footer-link">
+              <i data-lucide="phone" class="icon-sm"></i>
+              <span>(+34) 651 131 876</span>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        if (window.lucide) {
+          window.lucide.createIcons();
+        }
+      });
+    </script>
+  </body>
+</html>
