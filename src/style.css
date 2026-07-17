@@ -826,6 +826,12 @@ button {
 
 @media (min-width: 768px) {
   .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .bento-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -836,17 +842,30 @@ button {
   overflow: hidden;
 }
 
+@media (min-width: 1024px) {
+  .bento-span-2 {
+    grid-column: span 2;
+  }
+}
+
+.bento-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
 .bento-icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 16px;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
   background: linear-gradient(135deg, rgba(201, 168, 118, 0.2), transparent);
   border: 1px solid var(--border-medium);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--gold-400);
-  margin-bottom: 24px;
+  shrink: 0;
 }
 
 .bento-tag {
@@ -856,7 +875,6 @@ button {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   display: block;
-  margin-bottom: 6px;
 }
 
 .bento-title {
@@ -871,7 +889,33 @@ button {
   font-size: 14px;
   color: var(--text-muted);
   line-height: 1.6;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+}
+
+.competency-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.comp-tag {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 8px;
+  background: var(--bg-dark-800);
+  border: 1px solid var(--border-subtle);
+  color: #cbd5e1;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.bento-card:hover .comp-tag:hover {
+  background: rgba(201, 168, 118, 0.18);
+  border-color: var(--gold-400);
+  color: var(--gold-300);
+  transform: translateY(-1px);
 }
 
 .bento-link {
@@ -881,6 +925,104 @@ button {
   font-size: 13px;
   font-weight: 600;
   color: var(--gold-400);
+}
+
+/* ==========================================================================
+   GALERÍA / MOSAICO DE FOTOGRAFÍAS REALES (SOBRE MÍ)
+   ========================================================================== */
+.photo-mosaic-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 16px;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .photo-mosaic-grid {
+    gap: 24px;
+  }
+}
+
+.photo-card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--border-medium);
+  box-shadow: var(--shadow-card);
+  background: var(--bg-dark-900);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.photo-card:hover {
+  border-color: var(--gold-400);
+  transform: translateY(-4px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.85), 0 0 30px rgba(201, 168, 118, 0.2);
+}
+
+.mosaic-main {
+  grid-column: span 1;
+  grid-row: span 2;
+  aspect-ratio: 3/5;
+}
+
+.mosaic-sub-1,
+.mosaic-sub-2 {
+  grid-column: span 1;
+  aspect-ratio: 4/3;
+}
+
+.photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10, 9, 13, 0.92) 0%, rgba(10, 9, 13, 0.25) 50%, transparent 100%);
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.photo-card:hover .photo-overlay {
+  opacity: 0.95;
+}
+
+.photo-caption {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .photo-caption {
+    bottom: 22px;
+    left: 22px;
+    right: 22px;
+  }
+}
+
+.caption-tag {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold-400);
+  margin-bottom: 3px;
+}
+
+.caption-title {
+  font-family: var(--font-jakarta);
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.25;
+}
+
+@media (min-width: 640px) {
+  .caption-title {
+    font-size: 16px;
+  }
 }
 
 .checkpoint-card {
